@@ -1,0 +1,10 @@
+[Inputs]
+CarryIn
+Binvert
+=a[31:0]=
+=b[31:0]=
+=Operation[1:0]=
+[Outputs]
+CarryOut
+=Result[31:0]=
+[BiDir]

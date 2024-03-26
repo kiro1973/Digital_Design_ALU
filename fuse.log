@@ -1,0 +1,36 @@
+Running: C:\Xilinx\14.5\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Users/Dell/Downloads/OneBitBR/OneBitBR/alu_isim_beh.exe -prj C:/Users/Dell/Downloads/OneBitBR/OneBitBR/alu_beh.prj work.alu 
+ISim P.58f (signature 0x7708f090)
+Number of CPUs detected in this system: 12
+Turning on mult-threading, number of parallel sub-compilation jobs: 24 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/Dell/Downloads/OneBitBR/OneBitBR/MUXX.vhd" into library work
+Parsing VHDL file "C:/Users/Dell/Downloads/OneBitBR/OneBitBR/MUXA.vhd" into library work
+Parsing VHDL file "C:/Users/Dell/Downloads/OneBitBR/OneBitBR/MUX4.vhd" into library work
+Parsing VHDL file "C:/Users/Dell/Downloads/OneBitBR/OneBitBR/Mux2.vhd" into library work
+Parsing VHDL file "C:/Users/Dell/Downloads/OneBitBR/OneBitBR/FullAdder.vhd" into library work
+Parsing VHDL file "C:/Users/Dell/Downloads/OneBitBR/OneBitBR/ALUcomponents.vhd" into library work
+Parsing VHDL file "C:/Users/Dell/Downloads/OneBitBR/OneBitBR/OnerBitBR.vhd" into library work
+Parsing VHDL file "C:/Users/Dell/Downloads/OneBitBR/OneBitBR/ALU1.vhd" into library work
+Parsing VHDL file "C:/Users/Dell/Downloads/OneBitBR/OneBitBR/ALU32.vhd" into library work
+Parsing VHDL file "C:/Users/Dell/Downloads/OneBitBR/OneBitBR/alu.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package alucomponents
+Compiling package alu1
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling package muxx
+Compiling architecture behavioral of entity FullAdder [fulladder_default]
+Compiling architecture behavioral of entity Mux2 [mux2_default]
+Compiling architecture behavioral of entity Behavioral [behavioral_default]
+Compiling architecture behavioral of entity MUX4 [mux4_default]
+Compiling architecture behavioral of entity OnerBitBR [onerbitbr_default]
+Compiling architecture behavioral of entity ALU32 [alu32_default]
+Compiling architecture behavior of entity alu
+Time Resolution for simulation is 1ps.
+Compiled 20 VHDL Units
+Built simulation executable C:/Users/Dell/Downloads/OneBitBR/OneBitBR/alu_isim_beh.exe
+Fuse Memory Usage: 35108 KB
+Fuse CPU Usage: 546 ms

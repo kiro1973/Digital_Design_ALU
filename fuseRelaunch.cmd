@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Dell/Downloads/OneBitBR/OneBitBR/alu_isim_beh.exe" -prj "C:/Users/Dell/Downloads/OneBitBR/OneBitBR/alu_beh.prj" "work.alu" 

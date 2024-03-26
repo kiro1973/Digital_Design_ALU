@@ -1,0 +1,9 @@
+[Inputs]
+A
+B
+Cin
+=OPER[3:0]=
+[Outputs]
+RES
+Cout
+[BiDir]

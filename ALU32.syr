@@ -1,0 +1,429 @@
+Release 14.5 - xst P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.18 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.18 secs
+ 
+--> Reading design: ALU32.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ALU32.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ALU32"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : ALU32
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\Dell\Downloads\OneBitBR\OneBitBR\MUXX.vhd" into library work
+Parsing package <MUXX>.
+Parsing VHDL file "C:\Users\Dell\Downloads\OneBitBR\OneBitBR\MUXA.vhd" into library work
+Parsing entity <Behavioral>.
+Parsing architecture <Behavioral> of entity <behavioral>.
+Parsing VHDL file "C:\Users\Dell\Downloads\OneBitBR\OneBitBR\MUX4.vhd" into library work
+Parsing entity <MUX4>.
+Parsing architecture <Behavioral> of entity <mux4>.
+Parsing VHDL file "C:\Users\Dell\Downloads\OneBitBR\OneBitBR\Mux2.vhd" into library work
+Parsing entity <Mux2>.
+Parsing architecture <Behavioral> of entity <mux2>.
+Parsing VHDL file "C:\Users\Dell\Downloads\OneBitBR\OneBitBR\FullAdder.vhd" into library work
+Parsing entity <FullAdder>.
+Parsing architecture <Behavioral> of entity <fulladder>.
+Parsing VHDL file "C:\Users\Dell\Downloads\OneBitBR\OneBitBR\ALUcomponents.vhd" into library work
+Parsing package <ALUcomponents>.
+Parsing VHDL file "C:\Users\Dell\Downloads\OneBitBR\OneBitBR\OnerBitBR.vhd" into library work
+Parsing entity <OnerBitBR>.
+Parsing architecture <Behavioral> of entity <onerbitbr>.
+Parsing VHDL file "C:\Users\Dell\Downloads\OneBitBR\OneBitBR\ALU1.vhd" into library work
+Parsing package <ALU1>.
+Parsing VHDL file "C:\Users\Dell\Downloads\OneBitBR\OneBitBR\ALU32.vhd" into library work
+Parsing entity <ALU32>.
+Parsing architecture <Behavioral> of entity <alu32>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <ALU32> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:1127 - "C:\Users\Dell\Downloads\OneBitBR\OneBitBR\ALU32.vhd" Line 36: Assignment to cf ignored, since the identifier is never used
+
+Elaborating entity <FullAdder> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <OnerBitBR> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Mux2> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Behavioral> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <MUX4> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <ALU32>.
+    Related source file is "C:\Users\Dell\Downloads\OneBitBR\OneBitBR\ALU32.vhd".
+INFO:Xst:3210 - "C:\Users\Dell\Downloads\OneBitBR\OneBitBR\ALU32.vhd" line 37: Output port <O> of the instance <FAa> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Dell\Downloads\OneBitBR\OneBitBR\ALU32.vhd" line 39: Output port <O> of the instance <G0[1].FA> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Dell\Downloads\OneBitBR\OneBitBR\ALU32.vhd" line 39: Output port <O> of the instance <G0[2].FA> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Dell\Downloads\OneBitBR\OneBitBR\ALU32.vhd" line 39: Output port <O> of the instance <G0[3].FA> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Dell\Downloads\OneBitBR\OneBitBR\ALU32.vhd" line 39: Output port <O> of the instance <G0[4].FA> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Dell\Downloads\OneBitBR\OneBitBR\ALU32.vhd" line 39: Output port <O> of the instance <G0[5].FA> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Dell\Downloads\OneBitBR\OneBitBR\ALU32.vhd" line 39: Output port <O> of the instance <G0[6].FA> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Dell\Downloads\OneBitBR\OneBitBR\ALU32.vhd" line 39: Output port <O> of the instance <G0[7].FA> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Dell\Downloads\OneBitBR\OneBitBR\ALU32.vhd" line 39: Output port <O> of the instance <G0[8].FA> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Dell\Downloads\OneBitBR\OneBitBR\ALU32.vhd" line 39: Output port <O> of the instance <G0[9].FA> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Dell\Downloads\OneBitBR\OneBitBR\ALU32.vhd" line 39: Output port <O> of the instance <G0[10].FA> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Dell\Downloads\OneBitBR\OneBitBR\ALU32.vhd" line 39: Output port <O> of the instance <G0[11].FA> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Dell\Downloads\OneBitBR\OneBitBR\ALU32.vhd" line 39: Output port <O> of the instance <G0[12].FA> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Dell\Downloads\OneBitBR\OneBitBR\ALU32.vhd" line 39: Output port <O> of the instance <G0[13].FA> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Dell\Downloads\OneBitBR\OneBitBR\ALU32.vhd" line 39: Output port <O> of the instance <G0[14].FA> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Dell\Downloads\OneBitBR\OneBitBR\ALU32.vhd" line 39: Output port <O> of the instance <G0[15].FA> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Dell\Downloads\OneBitBR\OneBitBR\ALU32.vhd" line 39: Output port <O> of the instance <G0[16].FA> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Dell\Downloads\OneBitBR\OneBitBR\ALU32.vhd" line 39: Output port <O> of the instance <G0[17].FA> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Dell\Downloads\OneBitBR\OneBitBR\ALU32.vhd" line 39: Output port <O> of the instance <G0[18].FA> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Dell\Downloads\OneBitBR\OneBitBR\ALU32.vhd" line 39: Output port <O> of the instance <G0[19].FA> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Dell\Downloads\OneBitBR\OneBitBR\ALU32.vhd" line 39: Output port <O> of the instance <G0[20].FA> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Dell\Downloads\OneBitBR\OneBitBR\ALU32.vhd" line 39: Output port <O> of the instance <G0[21].FA> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Dell\Downloads\OneBitBR\OneBitBR\ALU32.vhd" line 39: Output port <O> of the instance <G0[22].FA> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Dell\Downloads\OneBitBR\OneBitBR\ALU32.vhd" line 39: Output port <O> of the instance <G0[23].FA> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Dell\Downloads\OneBitBR\OneBitBR\ALU32.vhd" line 39: Output port <O> of the instance <G0[24].FA> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Dell\Downloads\OneBitBR\OneBitBR\ALU32.vhd" line 39: Output port <O> of the instance <G0[25].FA> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Dell\Downloads\OneBitBR\OneBitBR\ALU32.vhd" line 39: Output port <O> of the instance <G0[26].FA> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Dell\Downloads\OneBitBR\OneBitBR\ALU32.vhd" line 39: Output port <O> of the instance <G0[27].FA> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Dell\Downloads\OneBitBR\OneBitBR\ALU32.vhd" line 39: Output port <O> of the instance <G0[28].FA> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Dell\Downloads\OneBitBR\OneBitBR\ALU32.vhd" line 39: Output port <O> of the instance <G0[29].FA> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Dell\Downloads\OneBitBR\OneBitBR\ALU32.vhd" line 39: Output port <O> of the instance <G0[30].FA> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Dell\Downloads\OneBitBR\OneBitBR\ALU32.vhd" line 41: Output port <Cout> of the instance <FAb> is unconnected or connected to loadless signal.
+    Summary:
+Unit <ALU32> synthesized.
+
+Synthesizing Unit <FullAdder>.
+    Related source file is "C:\Users\Dell\Downloads\OneBitBR\OneBitBR\FullAdder.vhd".
+    Found 2-bit adder for signal <n0012> created at line 18.
+    Found 2-bit adder for signal <tmp> created at line 18.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+Unit <FullAdder> synthesized.
+
+Synthesizing Unit <OnerBitBR>.
+    Related source file is "C:\Users\Dell\Downloads\OneBitBR\OneBitBR\OnerBitBR.vhd".
+    Summary:
+	no macro.
+Unit <OnerBitBR> synthesized.
+
+Synthesizing Unit <Mux2>.
+    Related source file is "C:\Users\Dell\Downloads\OneBitBR\OneBitBR\Mux2.vhd".
+    Found 1-bit tristate buffer for signal <O> created at line 17
+    Summary:
+	inferred   1 Multiplexer(s).
+	inferred   1 Tristate(s).
+Unit <Mux2> synthesized.
+
+Synthesizing Unit <Behavioral>.
+    Related source file is "C:\Users\Dell\Downloads\OneBitBR\OneBitBR\MUXA.vhd".
+    Found 1-bit tristate buffer for signal <O> created at line 41
+    Summary:
+	inferred   1 Multiplexer(s).
+	inferred   1 Tristate(s).
+Unit <Behavioral> synthesized.
+
+Synthesizing Unit <MUX4>.
+    Related source file is "C:\Users\Dell\Downloads\OneBitBR\OneBitBR\MUX4.vhd".
+    Found 1-bit 4-to-1 multiplexer for signal <Z_13_o_in1_MUX_16_o> created at line 19.
+    Found 1-bit tristate buffer for signal <O> created at line 19
+    Summary:
+	inferred   1 Multiplexer(s).
+	inferred   1 Tristate(s).
+Unit <MUX4> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 128
+ 2-bit adder                                           : 128
+# Multiplexers                                         : 96
+ 1-bit 2-to-1 multiplexer                              : 64
+ 1-bit 4-to-1 multiplexer                              : 32
+# Tristates                                            : 96
+ 1-bit tristate buffer                                 : 96
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 64
+ 2-bit adder carry in                                  : 64
+# Multiplexers                                         : 32
+ 1-bit 4-to-1 multiplexer                              : 32
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <ALU32> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ALU32, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : ALU32.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 164
+#      LUT2                        : 41
+#      LUT3                        : 30
+#      LUT4                        : 10
+#      LUT5                        : 4
+#      LUT6                        : 79
+# IO Buffers                       : 104
+#      IBUF                        : 69
+#      OBUF                        : 35
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice LUTs:                  164  out of  63400     0%  
+    Number used as Logic:               164  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    164
+   Number with an unused Flip Flop:     164  out of    164   100%  
+   Number with an unused LUT:             0  out of    164     0%  
+   Number of fully used LUT-FF pairs:     0  out of    164     0%  
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                         104
+ Number of bonded IOBs:                 104  out of    210    49%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 10.637ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 3604 / 35
+-------------------------------------------------------------------------
+Delay:               10.637ns (Levels of Logic = 24)
+  Source:            data1<1> (PAD)
+  Destination:       zflag (PAD)
+
+  Data Path: data1<1> to zflag
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   0.001   0.712  data1_1_IBUF (data1_1_IBUF)
+     LUT6:I0->O            1   0.097   0.295  G1[4].ALUs/MUXALU/Mmux_Z_13_o_in1_MUX_16_o111 (G1[4].ALUs/MUXALU/Mmux_Z_13_o_in1_MUX_16_o111)
+     LUT4:I3->O            4   0.097   0.309  G1[4].ALUs/MUXALU/Mmux_Z_13_o_in1_MUX_16_o112 (G1[4].ALUs/MUXALU/Mmux_Z_13_o_in1_MUX_16_o11)
+     LUT6:I5->O            1   0.097   0.511  G1[6].ALUs/MUXALU/Mmux_Z_13_o_in1_MUX_16_o121 (G1[6].ALUs/MUXALU/Mmux_Z_13_o_in1_MUX_16_o121)
+     LUT4:I1->O            4   0.097   0.309  G1[6].ALUs/MUXALU/Mmux_Z_13_o_in1_MUX_16_o122 (G1[6].ALUs/MUXALU/Mmux_Z_13_o_in1_MUX_16_o12)
+     LUT6:I5->O            2   0.097   0.299  G1[9].ALUs/MUXALU/Mmux_Z_13_o_in1_MUX_16_o121 (G1[9].ALUs/MUXALU/Mmux_Z_13_o_in1_MUX_16_o121)
+     LUT6:I5->O            4   0.097   0.309  G1[9].ALUs/FA/Madd_tmp_Madd_cy<0>11 (c<9>)
+     LUT6:I5->O            1   0.097   0.295  G1[14].ALUs/MUXALU/Mmux_Z_13_o_in1_MUX_16_o111 (G1[14].ALUs/MUXALU/Mmux_Z_13_o_in1_MUX_16_o111)
+     LUT4:I3->O            4   0.097   0.309  G1[14].ALUs/MUXALU/Mmux_Z_13_o_in1_MUX_16_o112 (G1[14].ALUs/MUXALU/Mmux_Z_13_o_in1_MUX_16_o11)
+     LUT6:I5->O            1   0.097   0.511  G1[16].ALUs/MUXALU/Mmux_Z_13_o_in1_MUX_16_o121 (G1[16].ALUs/MUXALU/Mmux_Z_13_o_in1_MUX_16_o121)
+     LUT4:I1->O            4   0.097   0.309  G1[16].ALUs/MUXALU/Mmux_Z_13_o_in1_MUX_16_o122 (G1[16].ALUs/MUXALU/Mmux_Z_13_o_in1_MUX_16_o12)
+     LUT6:I5->O            1   0.097   0.295  G1[19].ALUs/MUXALU/Mmux_Z_13_o_in1_MUX_16_o121 (G1[19].ALUs/MUXALU/Mmux_Z_13_o_in1_MUX_16_o121)
+     LUT4:I3->O            4   0.097   0.309  G1[19].ALUs/MUXALU/Mmux_Z_13_o_in1_MUX_16_o122 (G1[19].ALUs/MUXALU/Mmux_Z_13_o_in1_MUX_16_o12)
+     LUT6:I5->O            1   0.097   0.511  G1[22].ALUs/MUXALU/Mmux_Z_13_o_in1_MUX_16_o1111 (G1[22].ALUs/MUXALU/Mmux_Z_13_o_in1_MUX_16_o1111)
+     LUT4:I1->O            3   0.097   0.305  G1[22].ALUs/MUXALU/Mmux_Z_13_o_in1_MUX_16_o1112 (G1[22].ALUs/MUXALU/Mmux_Z_13_o_in1_MUX_16_o111)
+     LUT6:I5->O            4   0.097   0.309  G1[24].ALUs/MUXALU/Mmux_Z_13_o_in1_MUX_16_o121 (G1[24].ALUs/MUXALU/Mmux_Z_13_o_in1_MUX_16_o12)
+     LUT6:I5->O            1   0.097   0.511  G1[27].ALUs/MUXALU/Mmux_Z_13_o_in1_MUX_16_o1111 (G1[27].ALUs/MUXALU/Mmux_Z_13_o_in1_MUX_16_o1111)
+     LUT4:I1->O            3   0.097   0.305  G1[27].ALUs/MUXALU/Mmux_Z_13_o_in1_MUX_16_o1112 (G1[27].ALUs/MUXALU/Mmux_Z_13_o_in1_MUX_16_o111)
+     LUT6:I5->O            3   0.097   0.305  G1[29].ALUs/MUXALU/Mmux_Z_13_o_in1_MUX_16_o121 (G1[29].ALUs/MUXALU/Mmux_Z_13_o_in1_MUX_16_o12)
+     LUT6:I5->O            3   0.097   0.305  A32/MUXALU/Mmux_Z_13_o_in1_MUX_16_o111 (A32/MUXALU/Mmux_Z_13_o_in1_MUX_16_o11)
+     LUT6:I5->O            2   0.097   0.515  A32/MUXALU/Mmux_Z_13_o_in1_MUX_16_o1 (res_31_OBUF)
+     LUT6:I3->O            1   0.097   0.379  zflag6 (zflag6)
+     LUT2:I0->O            1   0.097   0.279  zflag7 (zflag_OBUF)
+     OBUF:I->O                 0.000          zflag_OBUF (zflag)
+    ----------------------------------------
+    Total                     10.637ns (2.135ns logic, 8.502ns route)
+                                       (20.1% logic, 79.9% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 15.00 secs
+Total CPU time to Xst completion: 15.58 secs
+ 
+--> 
+
+Total memory usage is 4625236 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :   32 (   0 filtered)
+
